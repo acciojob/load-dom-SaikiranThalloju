@@ -1,5 +1,8 @@
 //your JS code here. If required.
-const load = document.getElementByTag("body")
-load.addEventListener("DOMContentloaded",()=>{
-	load.innerText="DOM load success"
-})
+function addTextToBody() {
+      const body = document.body;
+      body.innerHTML = "DOM load success";
+    }
+
+    // Event listener to call the function when the DOM is loaded
+    document.addEventListener("DOMContentLoaded", addTextToBody);
